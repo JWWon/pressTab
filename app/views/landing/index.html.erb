@@ -5,7 +5,7 @@
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse"><i class="fa fa-bars"></i>
       </button>
       <a class="navbar-brand page-scroll" href="#page-top">
-        <i class="fa fa-play-circle"></i> <span class="light">Start</span> Bootstrap
+        <%= image_tag('ic_icon_logo_nav.png', :style => "width: auto; height: 40px; margin-top: -8px") %>
       </a>
     </div>
 
@@ -20,10 +20,16 @@
           <a class="page-scroll" href="#about">About</a>
         </li>
         <li>
-          <a class="page-scroll" href="#download">Download</a>
+          <a class="page-scroll" href="#process">Process</a>
+        </li>
+        <li>
+          <a class="page-scroll" href="#protfolio">Student Portfolio</a>
         </li>
         <li>
           <a class="page-scroll" href="#contact">Contact</a>
+        </li>
+        <li>
+          <!-- TODO:신청하기 버튼 넣기 -->
         </li>
       </ul>
     </div>
@@ -35,17 +41,38 @@
 <!-- Intro Header -->
 <header class="intro">
   <div class="intro-body">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-8 col-md-offset-2">
-          <h1 class="brand-heading">Grayscale</h1>
-          <p class="intro-text">A free, responsive, one page Bootstrap theme.
-            <br>Created by Start Bootstrap.</p>
-          <a href="#about" class="btn btn-circle page-scroll">
-            <i class="fa fa-angle-double-down animated"></i>
-          </a>
-        </div>
+    <div class="intro-wrap-container">
+      <div class="container">
+        <%= image_tag('ic_icon_logo.png', :style => "width:auto; height:76px; margin-bottom: 20px; margin-top: 8px") %>
+        <p class="intro-text"> <span>20대</span>를 위한 <span>20대</span>의 감각 </p>
+        <a href="#about" class="btn btn-round-rectangle page-scroll"><p>TAP 신청하기</p></a>
       </div>
     </div>
   </div>
 </header>
+
+<!-- About Section -->
+<section id="about" class="content-section text-center">
+  <div class="row">
+    <div class="container">
+      <div class="col-lg-10 col-lg-offset-1">
+        <p class="intro-text">About <span>TAB</span></p>
+        <p>탭은 디자인과 개발을 배우는 학생과 꿈을 펼쳐가는 스타트업이 만날 수 있도록 돕는 아웃소싱 커뮤니티입니다.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="process" class="content-section text-center">
+  <div class="row">
+
+  </div>
+</section>
+
+<section id="protfolio">
+
+</section>
+
+<section id="contact">
+
+</section>
