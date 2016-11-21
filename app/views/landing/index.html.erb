@@ -5,7 +5,7 @@
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse"><i class="fa fa-bars"></i>
       </button>
       <a class="navbar-brand page-scroll" href="#page-top">
-        <%= image_tag('ic_icon_logo_nav.png', :style => "width: auto; height: 40px; margin-top: -8px") %>
+        <%= image_tag('ic_icon_logo_nav.png', :style => "width: auto; height: 40px; margin-top: -10px") %>
       </a>
     </div>
 
@@ -30,6 +30,7 @@
         </li>
         <li>
           <!-- TODO:신청하기 버튼 넣기 -->
+          <a class="page-scroll" href="#apply">신청하기</a>
         </li>
       </ul>
     </div>
@@ -44,8 +45,8 @@
     <div class="intro-wrap-container">
       <div class="container">
         <%= image_tag('ic_icon_logo.png', :style => "width:auto; height:76px; margin-bottom: 20px; margin-top: 8px") %>
-        <p class="intro-text"> <span>20대</span>를 위한 <span>20대</span>의 감각 </p>
-        <a href="#about" class="btn btn-round-rectangle page-scroll"><p>TAP 신청하기</p></a>
+        <p class="custom-text"> <span>20대</span>를 위한 <span>20대</span>의 감각 </p>
+        <a href="#apply" class="btn btn-round-rectangle page-scroll"><p>TAP 신청하기</p></a>
       </div>
     </div>
   </div>
@@ -56,7 +57,7 @@
   <div class="row">
     <div class="container">
       <div class="col-lg-10 col-lg-offset-1">
-        <p class="intro-text">About <span>TAB</span></p>
+        <p class="custom-text">ABOUT <span>TAB</span></p>
         <p>탭은 디자인과 개발을 배우는 학생과 꿈을 펼쳐가는 스타트업이 만날 수 있도록 돕는 아웃소싱 커뮤니티입니다.</p>
       </div>
     </div>
@@ -65,12 +66,34 @@
 
 <section id="process" class="content-section text-center">
   <div class="row">
-
+    <div class="container">
+      <p class="custom-text"><span>TAB</span> PROCESS</p>
+      <%= image_tag('ic_content_process.png', :style => "width:100%; height:auto;") %>
+    </div>
   </div>
 </section>
 
-<section id="protfolio">
+<section id="protfolio" class="content-section text-center">
+  <div class="row">
+    <div class="container">
+      <p class="custom-text"><span>STUDENT</span> PORTFOLIO</p>
+    </div>
+  </div>
+</section>
 
+<section id="apply" class="apply-section">
+  <!-- TAB Apply -->
+  <div class="row">
+    <div class="apply-student col-lg-3 col-xs-3">
+
+    </div>
+    <div class="apply-content col-lg-6 col-xs-6" style="text-align: center">
+      <p class="custom-text"><span>TAB</span> APPLY</p>
+    </div>
+    <div class="apply-startup col-lg-3 col-xs-3">
+
+    </div>
+  </div>
 </section>
 
 <section id="contact">
