@@ -5,7 +5,7 @@
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse"><i class="fa fa-bars"></i>
       </button>
       <a class="navbar-brand page-scroll" href="#page-top">
-        <%= image_tag('ic_icon_logo_nav.png', :style => "width: auto; height: 40px; margin-top: -10px") %>
+        <%= image_tag('ic_icon_logo_nav.png', :style => "width: auto; height: 40px; margin-top: -10px;") %>
       </a>
     </div>
 
@@ -136,25 +136,32 @@
       <form class="form-horizontal">
 
         <div class="form-group">
-          <label for="inputName" class="col-sm-2 control-label">프로젝트 이름</label>
-          <div class="col-sm-10">
-            <input type="text" class="form-control">
+          <label for="inputEmail" class="col-sm-2 control-label">이메일 주소</label>
+          <div class="col-sm-9">
+            <input type="email" class="form-control" placeholder="yourname@company.com">
           </div>
         </div>
 
         <div class="form-group">
-          <label for="inputName" class="col-sm-2 control-label">예상가격</label>
-          <div class="col-sm-10">
+          <label for="inputName" class="col-sm-2 control-label">프로젝트 이름</label>
+          <div class="col-sm-9">
+            <input type="text" class="form-control" placeholder="프로젝트의 이름을 적어주세요">
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="inputPrice" class="col-sm-2 control-label">예상 작업비</label>
+          <div class="col-sm-9">
             <div class="input-group">
-              <input type="text" class="form-control" id="exampleInputAmount">
+              <input type="number" class="form-control text-right" id="exampleInputAmount">
               <div class="input-group-addon">원</div>
             </div>
           </div>
         </div>
 
         <div class="form-group">
-          <label for="inputName" class="col-sm-2 control-label">예상 기간</label>
-          <div class="col-sm-10">
+          <label for="inputTerm" class="col-sm-2 control-label">예상 기간</label>
+          <div class="col-sm-9">
             <select class="form-control">
               <option>7일 이내</option>
               <option>14일</option>
@@ -166,15 +173,15 @@
         </div>
 
         <div class="form-group">
-          <label for="inputName" class="col-sm-2 control-label">필요 기술</label>
-          <div class="col-sm-10">
-            <input type="text" class="form-control" placeholder="ex) (개발)php, 안드로이드 등 | (디자인)라이노, 포토샵 등">
+          <label for="inputTech" class="col-sm-2 control-label">필요 기술</label>
+          <div class="col-sm-9">
+            <input type="text" class="form-control" placeholder="ex) [개발] php, 안드로이드 등 / [디자인] 라이노, 포토샵 등">
           </div>
         </div>
 
         <div class="form-group">
-          <label for="inputName" class="col-sm-2 control-label">프로젝트 설명</label>
-          <div class="col-sm-10">
+          <label for="inputDescribe" class="col-sm-2 control-label">프로젝트 설명</label>
+          <div class="col-sm-9">
             <textarea class="form-control" rows="10"></textarea>
           </div>
         </div>
@@ -185,13 +192,26 @@
     </div>
     <div class="apply-startup col-lg-3 col-md-3 col-xs-3 text-center">
       <p>스타트업</p>
-      <!--<p>프로젝트 등록</p>-->
     </div>
   </div>
 </section>
 
-<section id="contact">
-
+<section id="contact"  class="container content-section text-center">
+  <div class="row">
+    <p class="custom-text" style="margin-bottom: 80px;"><span>CONTACT</span></p>
+    <div class="col-lg-4">
+      <p class="custom-text">FACEBOOK</p>
+      <p class="custom-text-content"><!-- TODO:FACEBOOK 계정 만들기! --></p>
+    </div>
+    <div class="col-lg-4">
+      <p class="custom-text">EMAIL</p>
+      <p class="custom-text-content">presstab016@gmail.com</p>
+    </div>
+    <div class="col-lg-4">
+      <p class="custom-text">KAKAO</p>
+      <p class="custom-text-content">@Skywrace</p>
+    </div>
+  </div>
 </section>
 
 <div class="footer-custom">
