@@ -4,7 +4,11 @@ class LandingController < ApplicationController
 
   def write
     @email = params[:email]
-    @contented = params[:contented]
+    @name = params[:name]
+    @price = params[:price]
+    @term = params[:term]
+    @tech = params[:tech]
+    @describe = params[:describe]
 
     mg_client = Mailgun::Client.new("key-5ffa51199cd5bbdbf41312a17c78f055")
 
@@ -12,7 +16,12 @@ class LandingController < ApplicationController
         from: @email,
         to: "pressTab <presstab016@gmail.com>",
         subject: "Hello pressTab",
-        text: @contented
+        text: "프로젝트 이름 : " + @name + "\n" +
+              "예상 작업비 : " + @price + "원" + "\n" +
+              "예상 기간 : " + @term + "\n" +
+              "필요 기술 : " + @tech + "\n" +
+              "프로젝트 설명 :\n" + @describe,
+        #TODO: file
     }
 
     result = mg_client.send_message('sandboxa24d9e8127ad4051a6c177ec51a6107f.mailgun.org', message_params).to_h!

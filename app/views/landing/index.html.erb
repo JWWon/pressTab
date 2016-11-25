@@ -133,19 +133,19 @@
     </div>
     <div class="apply-content col-lg-6 col-md-6 col-xs-6" style="text-align: center">
       <p class="custom-text" style="margin-bottom: 40px"><span>TAB</span> APPLY</p>
-      <form class="form-horizontal">
+      <form class="form-horizontal" action="/write" method="POST">
 
         <div class="form-group">
           <label for="inputEmail" class="col-sm-2 control-label">이메일 주소</label>
           <div class="col-sm-9">
-            <input type="email" class="form-control" placeholder="yourname@company.com">
+            <input name="email" type="email" class="form-control" placeholder="yourname@company.com">
           </div>
         </div>
 
         <div class="form-group">
           <label for="inputName" class="col-sm-2 control-label">프로젝트 이름</label>
           <div class="col-sm-9">
-            <input type="text" class="form-control" placeholder="프로젝트의 이름을 적어주세요">
+            <input name="name" type="text" class="form-control" placeholder="프로젝트의 이름을 적어주세요">
           </div>
         </div>
 
@@ -153,7 +153,7 @@
           <label for="inputPrice" class="col-sm-2 control-label">예상 작업비</label>
           <div class="col-sm-9">
             <div class="input-group">
-              <input type="number" class="form-control text-right" id="exampleInputAmount">
+              <input name="price" type="number" class="form-control text-right" id="exampleInputAmount">
               <div class="input-group-addon">원</div>
             </div>
           </div>
@@ -162,7 +162,7 @@
         <div class="form-group">
           <label for="inputTerm" class="col-sm-2 control-label">예상 기간</label>
           <div class="col-sm-9">
-            <select class="form-control">
+            <select name="term" class="form-control">
               <option>7일 이내</option>
               <option>14일</option>
               <option>1개월</option>
@@ -175,23 +175,21 @@
         <div class="form-group">
           <label for="inputTech" class="col-sm-2 control-label">필요 기술</label>
           <div class="col-sm-9">
-            <input type="text" class="form-control" placeholder="ex) [개발] php, 안드로이드 등 / [디자인] 라이노, 포토샵 등">
+            <input name="tech" type="text" class="form-control" placeholder="ex) [개발] php, 안드로이드 등 / [디자인] 라이노, 포토샵 등">
           </div>
         </div>
 
         <div class="form-group">
           <label for="inputDescribe" class="col-sm-2 control-label">프로젝트 설명</label>
           <div class="col-sm-9">
-            <textarea class="form-control" rows="10"></textarea>
+            <textarea name="describe" class="form-control" rows="10"></textarea>
           </div>
         </div>
-        <a class="page-scroll col-sm-2 col-sm-offset-5" href="#apply">
-          <div class="btn-apply text-center" style="color: #ffffff;">신청하기</div>
-        </a>
+        <button type="submit" class="col-sm-2 col-sm-offset-5 send-button" style="border: 0px;">신청하기</button>
       </form>
     </div>
     <div class="apply-startup col-lg-3 col-md-3 col-xs-3 text-center">
-      <p>스타트업</p>
+     <p>스타트업</p>
     </div>
   </div>
 </section>

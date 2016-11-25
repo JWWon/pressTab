@@ -254,6 +254,29 @@ a:focus {
   -moz-transition: background 0.3s ease-in-out;
   transition: background 0.3s ease-in-out;
 }
+.send-button {
+  background-color:#599bb3;
+  -moz-border-radius:10px;
+  -webkit-border-radius:10px;
+  border-radius:10px;
+  display:inline-block;
+  cursor:pointer;
+  color:#ffffff;
+  font-family:Arial;
+  font-size:14px;
+  padding:13px 47px;
+  text-decoration:none;
+  text-shadow:0px 0px 0px #3d768a;
+}
+.send-button:hover {
+  background-color:#408c99;
+  color: #dddddd;
+}
+.send-button:active {
+  position:relative;
+  top:1px;
+}
+
 @-webkit-keyframes pulse {
   0% {
     -webkit-transform: scale(1);
