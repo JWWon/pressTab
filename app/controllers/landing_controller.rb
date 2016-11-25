@@ -9,6 +9,7 @@ class LandingController < ApplicationController
     @term = params[:term]
     @tech = params[:tech]
     @describe = params[:describe]
+    @examples = params[:examples]
 
     mg_client = Mailgun::Client.new("key-5ffa51199cd5bbdbf41312a17c78f055")
 
@@ -16,11 +17,13 @@ class LandingController < ApplicationController
         from: @email,
         to: "pressTab <presstab016@gmail.com>",
         subject: "Hello pressTab",
-        text: "프로젝트 이름 : " + @name + "\n" +
+        text: "이메일 주소 : " + @email + "\n" +
+              "프로젝트 이름 : " + @name + "\n" +
               "예상 작업비 : " + @price + "원" + "\n" +
               "예상 기간 : " + @term + "\n" +
               "필요 기술 : " + @tech + "\n" +
-              "프로젝트 설명 :\n" + @describe,
+              "프로젝트 설명 :\n" + @describe + "\n" +
+              "참고 링크 : " + @examples,
         #TODO: file
     }
 
