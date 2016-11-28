@@ -10,29 +10,56 @@
 }
 
 @font-face {
+  font-family: 'HelveticaBold';
+  src: asset-url('HelveticaBold.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
   font-family: 'NanumBarunGothic';
-  src: asset-url('NanumBarunGothic.ttf') format('truetype');
+  src: asset-url('NanumBarunGothic.ttf') format('truetype'),
+  asset-url('NanumBarunGothic_Window.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'NanumBarunGothicLight';
-  src: asset-url('NanumBarunGothicLight.ttf') format('truetype');
+  src: asset-url('NanumBarunGothicLight.ttf') format('truetype'),
+  asset-url('NanumBarunGothicL.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'NanumBarunGothicBold';
+  src: asset-url('NanumBarunGothicBold.ttf') format('truetype'),
+  asset-url('NanumBarunGothicB.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'NanumSquareBold';
-  src: asset-url('NanumSquareBold.ttf') format('truetype');
+  src: asset-url('NanumSquareBold.ttf') format('truetype'),
+      asset-url('NanumSquareB.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'NanumSquareRegular';
-  src: asset-url('NanumSquareRegular.ttf') format('truetype');
+  src: asset-url('NanumSquareRegular.ttf') format('truetype'),
+      asset-url('NanumSquareR.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'NanumSquareExtraBold' ;
+  src: asset-url('NanumSquareExtraBold.ttf') format('truetype'),
+      asset-url('NanumSquareEB.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }

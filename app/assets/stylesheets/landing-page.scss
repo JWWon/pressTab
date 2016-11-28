@@ -39,7 +39,7 @@ p {
   letter-spacing: 0.4pt;
   font-family: NanumBarunGothic, Helvetica;
   span {
-    font-family: NanumBarunGothic, Helvetica;
+    font-family: NanumBarunGothicBold, HelveticaBold;
     font-size: 16.9pt;
     color: #008b9c;
   }
@@ -48,7 +48,7 @@ p {
   font-size: 12pt !important;
   color: #737c80;
   letter-spacing: 0.4pt;
-  font-family: Helvetica, NanumBarunGothic;
+  font-family: Helvetica, NanumBarunGothic, NanumBarunGothicLight;
   span {
     font-size: 15pt;
     color: #008b9c;
@@ -194,7 +194,7 @@ a:focus {
   }
 }
 .btn-round-rectangle {
-  width: 220px;
+  width: 215px;
   height: 28px;
   margin-top: 8px;
   margin-bottom: 8px !important;
@@ -348,7 +348,7 @@ a:focus {
   width: 25%;
   height: auto;
   p {
-    font-family: NanumSquareBold NanumSquare;
+    font-family: NanumSquareExtraBold;
     font-size: 10pt;
     margin-top: 8pt;
   }
