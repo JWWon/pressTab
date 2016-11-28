@@ -1,0 +1,17 @@
+@font-face {
+  font-family: 'HelveticaLight';
+  //src: asset-url('chalkduster-webfont.eot');
+  src: //asset-url('chalkduster-webfont.svg#chalkdusterregular') format('svg'),
+  //asset-url('chalkduster-webfont.eot?#iefix') format('embedded-opentype'),
+  //asset-url('chalkduster-webfont.woff') format('woff'),
+  asset-url('HelveticaLight.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'NanumBarunGothicLight';
+  src: asset-url('NanumBarunGothicLight.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
