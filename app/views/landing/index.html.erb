@@ -5,7 +5,7 @@
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse"><i class="fa fa-bars"></i>
       </button>
       <a class="navbar-brand page-scroll" href="#page-top">
-        <%= image_tag('ic_icon_logo_nav.png', :style => "width: auto; height: 40px; margin-top: -8px;") %>
+        <%= image_tag('ic_icon_logo_nav.png', :style => "width: auto; height: 40px; margin-top: -6px;") %>
       </a>
     </div>
 
@@ -130,10 +130,10 @@
 <section id="apply" class="apply-section">
   <!-- TAB Apply -->
   <div class="row">
-    <div class="apply-student col-lg-3 col-md-3 col-xs-3 text-center">
+    <div class="apply-student col-lg-3 col-md-3 col-xs-1 text-center">
       <p>디자이너 & 개발자</p>
     </div>
-    <div class="apply-content col-lg-6 col-md-6 col-xs-6" style="text-align: center">
+    <div class="apply-content col-lg-6 col-md-6 col-xs-10" style="text-align: center">
       <p class="custom-text" style="margin-bottom: 40px"><span>TAB</span> APPLY</p>
       <form class="form-horizontal" action="/write" method="POST">
 
@@ -198,7 +198,7 @@
         <button type="submit" class="col-sm-2 col-sm-offset-5 send-button" style="border: 0px; margin-top:10px;">신청하기</button>
       </form>
     </div>
-    <div class="apply-startup col-lg-3 col-md-3 col-xs-3 text-center">
+    <div class="apply-startup col-lg-3 col-md-3 col-xs-1 text-center">
      <p>스타트업</p>
     </div>
   </div>
@@ -207,17 +207,18 @@
 <section id="contact"  class="container content-section text-center">
   <div class="row">
     <p class="custom-text" style="margin-bottom: 80px;"><span>CONTACT</span></p>
-    <div class="col-lg-4">
-      <p class="custom-text">FACEBOOK</p>
-      <p class="custom-text-content"><!-- TODO:FACEBOOK 계정 만들기! --></p>
-    </div>
-    <div class="col-lg-4">
-      <p class="custom-text">EMAIL</p>
-      <p class="custom-text-content">contact@presstab.co.kr</p>
-    </div>
-    <div class="col-lg-4">
+    <div class="col-lg-4 col-xs-4">
       <p class="custom-text">KAKAO</p>
       <p class="custom-text-content">@Skywrace</p>
+    </div>
+    <div class="col-lg-4 col-xs-4">
+      <p class="custom-text">VISIT</p>
+      <p class="custom-text-content">경기도 용인시 기흥구 덕영대로 1732</p>
+      <p class="custom-text-content">경희대학교 국제캠퍼스</p>
+    </div>
+    <div class="col-lg-4 col-xs-4">
+      <p class="custom-text">EMAIL</p>
+      <p class="custom-text-content">contact@presstab.co.kr</p>
     </div>
   </div>
 </section>
@@ -229,3 +230,18 @@
     <p>ⓒ 2016 Tab, Inc. All rights reserved.</p>
   </div>
 </div>
+
+<script>
+  $(function(){
+    // Remove the # from the hash, as different browsers may or may not include it
+    var hash = location.hash.replace('#','');
+
+    if(hash != ''){
+      // Show the hash if it's set
+      //      alert(hash);
+
+      // Clear the hash in the URL
+      location.hash = '';
+    }
+  });
+</script>

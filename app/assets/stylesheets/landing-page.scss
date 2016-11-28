@@ -102,7 +102,6 @@ a:focus {
 }
 .navbar-custom .nav li a {
   margin-top: 4px;
-  margin-left: 80px;
   font-family: HelveticaLight, NanumBarunGothicLight;
   color: #c4cad2;
   -webkit-transition: background 0.3s ease-in-out;
@@ -141,6 +140,11 @@ a:focus {
   .navbar-custom.top-nav-collapse {
     padding: 0;
     background: #32424c;
+  }
+}
+@media (min-width: 1170px) {
+  .navbar-custom .nav li a {
+    margin-left: 80px;
   }
 }
 .intro {
@@ -340,11 +344,13 @@ a:focus {
     border: 0px;
   }
 }
-.apply-startup, .apply-student {
+.apply-startup,
+.apply-student {
   background: /* url() */ no-repeat center scroll;
   background-size: contain;
   padding-top: /* 55.3% */ 24.3%;
   padding-bottom: 24.3%;
+  visibility: hidden;
   width: 25%;
   height: auto;
   p {
@@ -353,7 +359,12 @@ a:focus {
     margin-top: 8pt;
   }
 }
-@media (min-width: 768px) {
+@media (min-width: 992px) {
+  .apply-startup,
+  .apply-student {
+    visibility: visible;
+  }
+
   .apply-startup p,
   .apply-student p {
     font-size: 16pt;
@@ -365,6 +376,12 @@ a:focus {
 }
 .apply-startup {
   background-image: url(asset_path('ic_background_apply_startup'));
+}
+#contact .custom-text {
+  margin-bottom: 50px;
+}
+#contact .custom-text-content {
+  font-size: 14px !important;
 }
 #map {
   width: 100%;
