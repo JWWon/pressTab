@@ -1,1 +1,23 @@
-<!-- 메일 전송이 완료되었을 때 보여줄 창! -->
+<div class="modal fade" tabindex="-1" role="dialog" aria-labelledby="sendSuccessLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <p class="custom-text" id="gridSystemModalLabel">TAB이 신청되었습니다</p>
+      </div>
+      <div class="modal-body">
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+<script>
+  $('#sendSuccessLabel').on('show.bs.modal', function (event) {
+    var modal = $(this)
+    modal.find('.modal-title').text(<%= params[@name] %> + '프로젝트 신청서가 접수되었습니다!') //위치 찾아서 데이터 입력해줌
+  })
+</script>

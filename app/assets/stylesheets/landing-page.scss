@@ -54,11 +54,28 @@ p {
     color: #008b9c;
   }
 }
+.custom-text-content-small {
+  font-size: 8pt !important;
+  color: #737c80;
+  letter-spacing: 0.4pt;
+  font-family: NanumBarunGothic, Helvetica;
+  span {
+    font-size: 12pt;
+    color: #008b9c;
+  }
+}
 @media (min-width: 768px) {
   p {
     margin: 0 0 35px;
     font-size: 20px;
     line-height: 1.6;
+  }
+  .custom-text-content-small {
+    font-size: 10pt !important;
+    span {
+      font-size: 15pt;
+      color: #008b9c;
+    }
   }
 }
 a {
@@ -197,6 +214,12 @@ a:focus {
     display:flex; justify-content:center; align-items:center;
   }
 }
+.about-detail {
+  background: #404c54;
+  .custom-text {
+    margin-bottom: 80px;
+  }
+}
 .btn-round-rectangle {
   width: 215px;
   height: 28px;
@@ -215,7 +238,7 @@ a:focus {
   color: white;
   background: rgb(138, 151, 169);
   p {
-    color: #000000;
+    color: #e4e6ea;
   }
 }
 .btn-round-rectangle i.animated {
@@ -233,6 +256,39 @@ a:focus {
   -moz-animation-iteration-count: infinite;
   -webkit-animation-timing-function: linear;
   -moz-animation-timing-function: linear;
+}
+.btn-round-rectangle-big {
+  width: 200px;
+  height: 44px;
+  margin-top: 8px;
+  margin-bottom: 8px !important;
+  border: 2px solid #8a97a9 !important;
+  border-radius: 8px !important;
+  background: transparent;
+  -webkit-transition: background 0.3s ease-in-out;
+  -moz-transition: background 0.3s ease-in-out;
+  transition: background 0.3s ease-in-out;
+  .custom-text-content {
+    margin-top: 5px;
+  }
+}
+.btn-round-rectangle-big:hover,
+.btn-round-rectangle-big:focus {
+  outline: none;
+  color: white;
+  background: rgb(138, 151, 169);
+  p {
+    color: #e4e6ea;
+  }
+}
+@media (max-width: 767px) {
+  .btn-round-rectangle-big {
+    width: 148px;
+    height: 36px;
+    .custom-text-content {
+      margin-top: 2px;
+    }
+  }
 }
 .portfolio-exmaple {
   width: 100%;
@@ -378,10 +434,21 @@ a:focus {
   background-image: url(asset_path('ic_background_apply_startup'));
 }
 #contact .custom-text {
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 #contact .custom-text-content {
-  font-size: 14px !important;
+  font-size: 12px !important;
+}
+#contact .contact-margin {
+  margin-bottom: 40px;
+}
+@media (min-width: 768px) {
+  #contact .custom-text {
+    margin-bottom: 50px;
+  }
+  #contact .custom-text-content {
+    font-size: 14px !important;
+  }
 }
 #map {
   width: 100%;
@@ -447,7 +514,7 @@ footer p {
   background: #404c54;
   padding: 20px;
   p {
-    color: #ffffff;
+    color: #dddddd;
     font-family: "Nanum Gothic";
     font-size: 12px;
   }
