@@ -66,49 +66,62 @@
   </div>
 </section>
 
-<section class="about-detail content-section text-center">
+<!--<section class="about-detail content-section text-center">
   <div class="row">
     <div class="container">
       <p class="custom-text"><span>당신은</span> 누구신가요?</p>
-      <div class="col-lg-4">
-        <a href="#">디자이너</a>
+      <div class="col-lg-6">
+        <a data-toggle="collapse" href="#detail-student" aria-expanded="false" aria-controls="collapseExample">디자이너 & 개발자</a>
       </div>
-      <div class="col-lg-4">
-        <a href="#">개발자</a>
+      <div class="col-lg-6">
+        <a data-toggle="collapse" href="#detail-startup" aria-expanded="false" aria-controls="collapseExample">스타트업</a>
       </div>
-      <div class="col-lg-4">
-        <a href="#">스타트업</a>
+    </div>
+    <div class="collapse" id="detail-student">
+      <div class="well">
+        You are designer & developer!
+      </div>
+    </div>
+    <div class="collapse" id="detail-startup">
+      <div class="well">
+        You are enterprenure!
       </div>
     </div>
   </div>
-</section>
+</section>-->
 
 <section id="process" class="content-section text-center">
   <div class="row">
     <div class="container">
       <p class="custom-text" style="margin-bottom: 30px"><span>TAB</span> PROCESS</p>
-      <%= image_tag('ic_icon_process.png', :style => "width: 87.6%; height: auto; margin-bottom: 20px") %>
+      <%= image_tag('ic_icon_process2.png', :style => "width: 93.2%; height: auto; margin-bottom: 20px") %>
       <div class="col-lg-3 col-xs-3">
         <p class="custom-text-content">계획서 작성</p>
-        <p class="custom-text-content-small">만들고 싶은 프로젝트를 적어 신청해주세요</p>
+        <p class="custom-text-content-small">만들고 싶은 프로젝트를 적어<br>Tab에 신청해주세요</p>
       </div>
       <div class="col-lg-3 col-xs-3">
         <p class="custom-text-content">디자이너-개발자 지원</p>
-        <p class="custom-text-content-small">1-3일 내에 계획서에 지원한 디자이너 & 개발자와 연결됩니다</p>
+        <p class="custom-text-content-small">1-3일 내에 계획서에 지원한<br>디자이너 & 개발자와 연결됩니다</p>
       </div>
       <div class="col-lg-3 col-xs-3">
         <p class="custom-text-content">선택 & 계약</p>
-        <p class="custom-text-content-small">프로젝트와 맞는 디자이너 & 개발자를 선택해 계약합니다</p>
+        <p class="custom-text-content-small">프로젝트와 맞는 디자이너와<br>개발자를 선택해 계약합니다</p>
       </div>
       <div class="col-lg-3 col-xs-3">
         <p class="custom-text-content">프로젝트 진행</p>
-        <p class="custom-text-content-small">세상에 없던 프로젝트를 소중한 인연과 함께 만들어가세요!</p>
+        <p class="custom-text-content-small">세상에 없던 프로젝트를 소중한 인연과<br>함께 만들어가세요!</p>
       </div>
       <!--<%= image_tag('ic_content_process.png', :style => "width:100%; height:auto;") %>-->
       <div class="col-xs-12 text-center">
-        <a href="#" class="btn btn-round-rectangle-big page-scroll" style="margin-top: 40px;">
+        <a class="btn btn-round-rectangle-big page-scroll" style="margin-top: 40px;"
+           data-toggle="collapse" href="#collapse-help" aria-expanded="false" aria-controls="collapseExample">
           <p class="custom-text-content" style="font-size: 10pt !important;">도움말</p>
         </a>
+        <div class="collapse" id="collapse-help">
+          <div class="well">
+            우리의 정책들입니다!
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -170,7 +183,7 @@
   <!-- TAB Apply -->
   <div class="row">
     <div class="apply-student col-lg-3 col-md-3 col-xs-1 text-center">
-      <p>디자이너 & 개발자</p>
+      <button class="choose-button" style="border: 0px; margin-top:10px;"><p>디자이너&개발자</p></button>
     </div>
     <div class="apply-content col-lg-6 col-md-6 col-xs-10" style="text-align: center">
       <p class="custom-text" style="margin-bottom: 40px"><span>TAB</span> APPLY</p>
@@ -238,7 +251,9 @@
       </form>
     </div>
     <div class="apply-startup col-lg-3 col-md-3 col-xs-1 text-center">
-     <p>스타트업</p>
+      <button class="choose-button" style="border: 0px; margin-top:10px;">
+        <p>스타트업</p>
+      </button>
     </div>
   </div>
 </section>
@@ -262,12 +277,12 @@
   </div>
 </section>
 
-<div class="footer-custom">
+<div class="footer-custom text-center">
   <div class="container">
     <div class="text-center">
-      <a href="#"><p class="custom-text-content-small footer-horizontal">이용약관</p></a>
-      <a href="#"><p class="custom-text-content-small footer-horizontal">개인정보 취급 방침</p></a>
-      <a href="#"><p class="custom-text-content-small footer-horizontal">도움말</p></a>
+      <a href="#"><p class="custom-text-content-small footer-horizontal col-lg-2 col-lg-offset-3">이용약관</p></a>
+      <a href="#"><p class="custom-text-content-small footer-horizontal col-lg-2">개인정보 취급 방침</p></a>
+      <a href="#"><p class="custom-text-content-small footer-horizontal col-lg-2">도움말</p></a>
     </div>
 
     <hr class="footer-divider">
